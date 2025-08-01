@@ -2,81 +2,60 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>This Is America Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
     * {
-      box-sizing: border-box;
+      margin: 0; padding: 0; box-sizing: border-box;
     }
-
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #ffffff, #f4f4f4);
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f5f5f5;
       color: #333;
     }
-
     header {
       background-color: #000;
-      color: white;
-      padding: 2rem 1rem;
+      color: #fff;
+      padding: 20px;
       text-align: center;
     }
-
     header h1 {
-      margin: 0;
-      font-size: 3rem;
-      letter-spacing: 2px;
+      font-size: 2.5rem;
     }
-
-    section {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 1rem;
+    .map-banner {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+    .contacto {
+      background-color: #fff;
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: -50px;
+      border-radius: 12px;
+    }
+    .contacto h2 {
       text-align: center;
+      margin-bottom: 20px;
     }
-
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    section p {
+    .info {
       font-size: 1.1rem;
       line-height: 1.6;
+      text-align: center;
     }
-
-    .contact {
-      margin-top: 2rem;
-    }
-
-    .contact a {
-      display: inline-block;
-      margin: 0.5rem;
+    .info a {
+      color: #000;
       text-decoration: none;
-      color: #0066cc;
       font-weight: bold;
     }
-
-    .contact a:hover {
-      text-decoration: underline;
-    }
-
     footer {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 20px;
       font-size: 0.9rem;
-      color: #777;
-      background-color: #f0f0f0;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      section h2 {
-        font-size: 1.5rem;
-      }
+      color: #888;
     }
   </style>
 </head>
@@ -84,22 +63,30 @@
 
   <header>
     <h1>This Is America Shop</h1>
+    <p>Website for Sale</p>
   </header>
 
-  <section>
-    <h2>¡Estamos preparando algo increíble!</h2>
-    <p>  
-    <br>Contáctanos o síguenos en redes sociales:</p>
+  <!-- Banner con Google Maps - Monterrey Casanare -->
+  <iframe 
+    class="map-banner"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.631710812119!2d-72.88821862583557!3d4.879018740001604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6af5cb51eeaf27%3A0x31f80516b7467b4d!2sMonterrey%2C%20Casanare!5e0!3m2!1ses-419!2sco!4v1690317586355!5m2!1ses-419!2sco"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
 
-    <div class="contact">
-      <a href="mailto:fabianrodriguez7@gmail.com">fabianrodriguez7@gmail.com</a><br />
-      <a href="tel:+573186498561">+57 318 649 8561</a><br />
-      <a href="https://www.instagram.com/thisisamericashop" target="_blank">@thisisamericashop</a>
+  <section class="contacto">
+    <h2>Contáctanos</h2>
+    <div class="info">
+      <p>Email: <a href="mailto:fabianrodriguez7@gmail.com">fabianrodriguez7@gmail.com</a></p>
+      <p>Celular: <a href="tel:+573186498561">+57 318 649 8561</a></p>
+      <p>Instagram: <a href="https://instagram.com/thisisamericashop" target="_blank">@thisisamericashop</a></p>
+      <p>Ubicación: Monterrey, Casanare - Colombia</p>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 This Is America Shop. Todos los derechos reservados.
+    © 2025 This Is America Shop — Todos los derechos reservados.
   </footer>
 
 </body>
