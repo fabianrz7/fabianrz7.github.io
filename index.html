@@ -2,81 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Website for Sale - This Is America Shop</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>This is America Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
     body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f5f5f5;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7f7f7;
       color: #333;
     }
     header {
-      background-color: #111;
+      background: #000;
       color: #fff;
-      padding: 40px 20px;
+      padding: 20px 0;
       text-align: center;
     }
     header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
+      margin: 0;
+      font-size: 2rem;
     }
-    header p {
-      font-size: 1.2rem;
-      color: #ccc;
+    nav {
+      margin-top: 10px;
     }
-    .contact {
-      background-color: #fff;
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: 40px auto;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 12px;
-    }
-    .contact h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .info {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      text-align: center;
-    }
-    .info a {
-      color: #000;
+    nav a {
+      color: #fff;
+      margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+    }
+    #banner {
+      background: url('https://images.unsplash.com/photo-1606813909227-cb94f121f457?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      padding: 100px 20px;
+      color: #fff;
+      text-align: center;
+    }
+    #banner h2 {
+      font-size: 2.5rem;
+    }
+    #banner p {
+      font-size: 1.2rem;
+    }
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      background-color: #fff;
+    }
+    .highlight-box {
+      background: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
     footer {
+      background: #111;
+      color: #aaa;
       text-align: center;
-      padding: 20px;
+      padding: 20px 0;
       font-size: 0.9rem;
-      color: #888;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Website for Sale</h1>
-    <p>This domain is available for purchase</p>
+    <h1>This is America <em>Shop</em></h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Acerca del Dominio</a>
+      <a href="#">Contacto</a>
+    </nav>
   </header>
 
-  <section class="contact">
-    <h2>Interested in this website?</h2>
-    <div class="info">
-      <p>Email: <a href="mailto:fabianrodriguez7@gmail.com">fabianrodriguez7@gmail.com</a></p>
-      <p>Phone: <a href="tel:+573186498561">+57 318 649 8561</a></p>
-      <p>Instagram: <a href="https://instagram.com/thisisamericashop" target="_blank">@thisisamericashop</a></p>
-      <p>Location: Casanare – Colombia</p>
+  <section id="banner">
+    <h2>Dominio Disponible para Venta</h2>
+    <p>Adquiere el dominio <strong>thisisamericashop.com</strong> para tu próximo proyecto web</p>
+  </section>
+
+  <section class="highlights">
+    <div class="highlight-box">
+      <h3>Nombre Memorables</h3>
+      <p>Ideal para emprendimientos relacionados con cultura, moda o estilo americano.</p>
+    </div>
+    <div class="highlight-box">
+      <h3>Alta Recordación</h3>
+      <p>Un nombre impactante que conecta fácilmente con el público.</p>
+    </div>
+    <div class="highlight-box">
+      <h3>Fácil de Posicionar</h3>
+      <p>Optimizado para branding, redes sociales y posicionamiento SEO.</p>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 ThisIsAmericaShop.com – Domain for sale
+    &copy; 2025 This is America Shop - Dominio en venta | Contacto: fabianrodriguez7@gmail.com
   </footer>
 
 </body>
